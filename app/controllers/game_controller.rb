@@ -4,4 +4,8 @@ class GameController < ApplicationController
 
   def rules
   end
+
+  def steam
+    @points = 500
+  end
 end

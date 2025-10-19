@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   root "game#index"
 
   get '/rules', to: 'game#rules'
+
+  get '/steam', to: 'game#steam'
 end
