@@ -1,0 +1,9 @@
+body {
+  background: #1E1E1E;
+  color: #E0BEB4;
+}
+
+.content-container {
+  max-width: 80%;
+  margin: 0 auto;
+}
