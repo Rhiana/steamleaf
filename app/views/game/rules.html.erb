@@ -7,6 +7,11 @@
       Download Rules (pdf)
     </a>
 
+    <div class="rules-page__nav">
+      <a href="#general" class="rules-page__category general">
+        General
+      </a>
+    </div>
   </aside>
 
   <article class="rules-page__box rules-page__info">
@@ -20,6 +25,98 @@
       <li><i class='bx bx-stopwatch'></i>60 - 90 mins</li>
       <li><i class='bx bx-parent-child'></i>Ages 10 +</li>
     </ul>
+
+    <div class="rules-page__list">
+      <h3>
+        Index
+      </h3>
+
+      <h3 id="general" class="rules-page__category general">
+        General
+      </h3>
+      <h4 class="rules-page__category general">
+        Factions
+      </h4>
+      <div class="rules-page__details">
+        <p>
+          The Steam Guild are a collaboration of badgers, beavers, and weasels, with steam-powered technology to aid them in battle.
+          The Leaf Coven are a group of foxes, racoons, and bobcats, who specialise in nature-based magic.
+        </p>
+      </div>
+
+      <h4 class="rules-page__category general">
+        The basics of play
+      </h4>
+      <div class="rules-page__details">
+        <p>
+          Your faction will have a mission objective. This is the goal you are trying to complete.
+          To win the game, you must achieve your faction’s objective and stop your opponent from achieving theirs.
+          (If both parties achieve their objective, or if both fail, the game ends in a draw.)
+        </p>
+        <p>
+          When you achieve (or fail) your objective, you must announce this to your opponent.
+          The game ends when both mission objectives have been achieved or have failed.
+        </p>
+      </div>
+
+      <h4 class="rules-page__category general">
+        The board
+      </h4>
+      <div class="rules-page__details">
+        <p>
+          The game board has two sides: a market, and a garden. Choose your preferred side to play.
+        </p>
+        <p>
+          There are five types of tile on the game board.
+        </p>
+        <ul class="rules-page__tiles-list">
+          <li>
+            <%= image_tag "tiles/brown-tile.png", alt: "", height: 75 %>
+            Indoor tiles (brown)<br>
+            These represent the inside of buildings. The interior of a building is considered to be open space; there are no separate rooms once inside.<br>
+            Units can only move from indoors to outdoors by passing through a doorway.
+          </li>
+
+          <li>
+            <%= image_tag "tiles/grey-tile.png", alt: "", height: 75 %>
+            Outdoor tiles (grey)<br>
+            These represent roads between the buildings.
+          </li>
+
+          <li>
+            <%= image_tag "tiles/green-tile.png", alt: "", height: 75 %>
+            Obstacle tiles (green)<br>
+            These represent obstacles on the ground. Units cannot stand on these tiles, but they can see over the top of them.
+          </li>
+
+          <li>
+            <%= image_tag "tiles/yellow-tile.png", alt: "", height: 75 %>
+            Obstacle tiles (yellow)<br>
+            These represent tall obstacles. Units cannot stand on these tiles, see over the top of them, or shoot across them.
+          </li>
+
+          <li>
+            <%= image_tag "tiles/red-tile.png", alt: "", height: 75 %>
+            Obstacle tiles (red)<br>
+            These are special obstacle tiles, with the same rules as basic (green) obstacle tiles. They are used to complete your faction’s objective.
+          </li>
+        </ul>
+      </div>
+      <h4 class="rules-page__category general">
+        Game setup
+      </h4>
+      <div class="rules-page__details">
+        <p>
+          Each player must select a mission objective at random from the objective cards for their faction. Do not reveal what objective you have been given.
+        </p>
+        <p>
+          Agree on the power level your game will use, and create your faction. Select units, equipment or charms, and tactical cards. Do not reveal any of your chosen items to your opponent.
+        </p>
+        <p>
+          Position your units on the board. Roll a die to determine which player will place their units first. The starting player can deploy their units into any of the tiles in their chosen quadrant; then, the other player can deploy their units into the tiles of the opposite quadrant.
+        </p>
+      </div>
+    </div>
   </article>
 </section>
 
