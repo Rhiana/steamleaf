@@ -111,4 +111,13 @@
   &.general {
     background-color: #B6C9A3;
   }
+  &.faction {
+    background-color: #9DB3C0;
+  }
+  &.game {
+    background-color: #CDA34F;
+  }
+  &.missions {
+    background-color: #D36047;
+  }
 }
