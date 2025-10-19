@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## SteamLeaf
 
-Things you may want to cover:
+Steam Leaf is a tactical wargame for two players. The players will equip their faction, and try to achieve their faction’s objective while preventing their opponent’s faction from achieving theirs.
+
+This displays the instructions for the game and uses Hotwire and Turbo Frames to help
+track and build army factions.
+
 
 * Ruby version
+Ruby 3.4.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Rails version
+Rails 8.0.3
