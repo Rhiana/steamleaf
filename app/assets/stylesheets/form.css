@@ -1,0 +1,11 @@
+label {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  font-size: 1.25rem;
+  border-radius: 8px;
+  width: 5rem;
+  text-align: right;
+}
