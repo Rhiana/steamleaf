@@ -3,6 +3,7 @@
   top: 0;
   background: #271915;
   border-bottom: 1px solid #E0BEB4;
+  z-index: 10;
   nav {
     display: flex;
     align-items: center;
