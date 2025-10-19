@@ -1,5 +1,35 @@
 <section class="build-page content-container">
   <h1>Steam Guild</h1>
 
+  <aside class="build-page__box build-page__index">
+    <h2>Roster</h2>
+    <div class="build-page__content">
+      <h3>
+        Points: <%= @points %>
+      </h3>
+    </div>
+  </aside>
 
+  <article class="build-page__box build-page__info">
+    <h2>Units</h2>
+    <div class="build-page__content">
+      <h3>Leaders</h3>
+
+      <div>
+        <%= image_tag "cards/Comm_Badger_GuildMaster.png", alt: "Badger GuildMaster" %>
+        <p>50 Points</p>
+      </div>
+
+      <div>
+        <%= image_tag "cards/Comm_Beaver_Engineer.png", alt: "Beaver Engineer" %>
+        <p>30 Points</p>
+      </div>
+
+      <div>
+        <%= image_tag "cards/Comm_Weasel_Taskmaster.png", alt: "Weasel Taskmaster" %>
+        <p>40 Points</p>
+      </div>
+
+    </div>
+  </article>
 </section>
