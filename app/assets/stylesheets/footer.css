@@ -1,0 +1,8 @@
+.bottom-footer {
+  background-color: #0E1519;
+  border-top: 1px solid #E0BEB4;
+  padding: 1rem 4rem;
+  p {
+    text-align: center;
+  }
+}

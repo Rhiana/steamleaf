@@ -1,4 +1,6 @@
 .top-nav {
+  position: sticky;
+  top: 0;
   background: #271915;
   border-bottom: 1px solid #E0BEB4;
 }
