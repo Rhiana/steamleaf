@@ -1,0 +1,19 @@
+.button {
+  text-align: center;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  border-radius: .5rem;
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.button--dark {
+  background-color: #0E1519;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #0E1519;
+    background-color: #ffffff;
+  }
+}
