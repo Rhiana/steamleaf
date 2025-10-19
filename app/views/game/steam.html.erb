@@ -4,9 +4,16 @@
   <aside class="build-page__box build-page__index">
     <h2>Roster</h2>
     <div class="build-page__content">
-      <h3>
-        Points: <%= @points %>
-      </h3>
+      <%= turbo_frame_tag 'anyframe' do %>
+        <div>
+          <h3>Points: <%= local_assigns[:unitpoints] %> / <%= @points %></h3>
+          <%= form_with scope: :any, url: turbo_frame_submit_path, local: true do |form| %>
+            <%= form.label :unitpoints, 'Unit points'  %>
+            <%= form.text_field :unitpoints, type: 'number', 'required' => 'true', 'value' => "0",  'aria-describedby' => 'unitpoints' %>
+            <%= form.submit 'Add Unit', 'id' => 'submit-number', class: "button button--dark" %>
+          <% end %>
+        <div>
+      <% end %>
     </div>
   </aside>
 

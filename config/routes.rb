@@ -15,4 +15,8 @@ Rails.application.routes.draw do
   get '/rules', to: 'game#rules'
 
   get '/steam', to: 'game#steam'
+
+  get '/steam/turbo_frame_form' => 'game#turbo_frame_form', as: 'turbo_frame_form'
+
+  post '/steam/turbo_frame_submit' => 'game#turbo_frame_submit', as: 'turbo_frame_submit'
 end

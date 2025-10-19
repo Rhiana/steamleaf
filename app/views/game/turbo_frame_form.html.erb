@@ -1,0 +1,11 @@
+<div>
+  <%= turbo_frame_tag 'anyframe' do %>
+    <h3>Points: <%= local_assigns[:unitpoints] %> / <%= @maxpoints %></h3>
+          
+    <%= form_with scope: :any, url: turbo_frame_submit_path, local: true do |form| %>
+      <%= form.label :unitpoints, 'Unit points'  %>
+      <%= form.text_field :unitpoints, type: 'number', 'required' => 'true', 'value' => "0",  'aria-describedby' => 'unitpoints' %>
+      <%= form.submit 'Add unit', 'id' => 'submit-number', class: "button button--dark" %>
+    <% end %>
+  <% end %>
+</section>
