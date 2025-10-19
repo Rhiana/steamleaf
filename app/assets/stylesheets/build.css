@@ -39,6 +39,9 @@
     position: sticky;
     top: 100px;
   }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .build-page__info {
