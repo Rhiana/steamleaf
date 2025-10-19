@@ -1,0 +1,52 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 750px;
+  padding: 2rem;
+  @media (min-width: 768px) {
+    padding: 4rem;
+  }
+  p {
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.intro__story {
+  /* background-color: #1B2313; */
+  background-color: #394247;
+  background-image: url(neutral-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.intro__steam {
+  background-color: #271915;
+  background-image: url(city-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+  @media (min-width: 768px) {
+    align-items: flex-start;
+  }
+  p {
+    @media (min-width: 768px) {
+      text-align: right;
+    }
+  }
+}
+
+.intro__leaf {
+  background-color: #1B2313;
+  background-image: url(forest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
