@@ -11,4 +11,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "game#index"
+
+  get '/rules', to: 'game#rules'
 end
