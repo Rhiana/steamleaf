@@ -76,8 +76,9 @@
     h5 {
       font-size: 1.5rem;
     }
-    p {
-      font-size: 1.25rem;
+    p,
+    ul li {
+      font-size: 1.125rem;
     }
     .rules-page__details {
       margin-left: 2.5rem;
