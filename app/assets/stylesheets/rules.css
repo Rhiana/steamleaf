@@ -97,6 +97,29 @@
       }
     }
   }
+
+  .rules-page__card-details {
+    display: flex;
+    img {
+      margin-right: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  .rules-page__extra-details {
+    display: flex;
+    p {
+      width: 70%;
+      margin-right: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
 }
 
 .rules-page__category {
