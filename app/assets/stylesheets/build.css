@@ -32,6 +32,18 @@
   .build-page__content {
     padding: 2rem;
   }
+
+  &.steam {
+    h2 {
+      background-color: #9DB3C0;
+    }
+  }
+
+  &.leaf {
+    h2 {
+      background-color: #B6C9A3;
+    }
+  }
 }
 
 .build-page__index {

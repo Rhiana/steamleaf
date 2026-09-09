@@ -10,16 +10,21 @@ class GameController < ApplicationController
     session[:points] = @points
   end
 
+  def leaf
+    @points = 500
+    session[:points] = @points
+  end
+
    def turbo_frame_form
    end
-   
-   def turbo_frame_submit      
+
+   def turbo_frame_submit
       @maxpoints = 500
 
       extracted_unitpoints = params[:any][:unitpoints].to_i
 
       session[:points] =  session[:points] - extracted_unitpoints
 
-      render :turbo_frame_form, status: :ok, locals: {unitpoints: session[:points], comment: 'turbo_frame_submit ok' }
+      render :turbo_frame_form, status: :ok, locals: { unitpoints: session[:points], comment: "turbo_frame_submit ok" }
    end
 end
