@@ -12,11 +12,13 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "game#index"
 
-  get '/rules', to: 'game#rules'
+  get "/rules", to: "game#rules"
 
-  get '/steam', to: 'game#steam'
+  get "/steam", to: "game#steam"
 
-  get '/steam/turbo_frame_form' => 'game#turbo_frame_form', as: 'turbo_frame_form'
+  get "/leaf", to: "game#leaf"
 
-  post '/steam/turbo_frame_submit' => 'game#turbo_frame_submit', as: 'turbo_frame_submit'
+  get "/steam/turbo_frame_form" => "game#turbo_frame_form", as: "turbo_frame_form"
+
+  post "/steam/turbo_frame_submit" => "game#turbo_frame_submit", as: "turbo_frame_submit"
 end
