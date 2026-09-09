@@ -247,7 +247,7 @@
         <p>
           <strong>Oaken Blessing:</strong> Increases unit defence dice<br/>
           <strong>Whistling Arrows:</strong> Foxs only, Increase range dice<br/>
-          <strong>Swift Claws: Bobcats only, unit attacks twice if moved at least 5 squares before
+          <strong>Swift Claws:</strong> Bobcats only, unit attacks twice if moved at least 5 squares before
           attack action<br/>
           <strong>Thunder Strike:</strong> Defenders defence roll is one dice lower<br/>
           Spirit Shield: Unit can use resolve for defence but may not attack next turn<br/>
@@ -259,6 +259,184 @@
       <h3 id="game" class="rules-page__category game">
         Game play
       </h3>
+      <h4 class="rules-page__category game">
+        Taking Action
+      </h4>
+      <div class="rules-page__details">
+        <p>
+          Your faction will have several <strong>UNITS</strong> people you have placed on the game
+          board. During your turn, you can use any or all of your units, one at a time.
+        </p>
+        <p>
+          In a single turn, Follower units can:
+          <ul>
+            <li>make a move</li>
+            <li>attack an opposing unit</li>
+          </ul>
+        </p>
+        
+        <p>In a single turn, Leader units can:
+          <ul>
+            <li>make a move</li>
+            <li>
+              one of:
+              <ul>
+                <li>attack an opposing unit</li>
+                <li>interrogate an opposing unit</li>
+                <li>make an <strong>OBJECTIVE ACTION</strong></li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+
+        <h5>Basic Movement</h5>
+        <p>
+          To move a unit, you roll the die listed under their Move stat (for instance,
+          to move a Fox Archer, you would roll a D6) and then add any other listed
+          numbers (a Fox Archer’s movement stat is 4+D6, so you would add 4 to the
+          result of your D6 roll). The total will be the number of tiles the unit can move
+          in any direction. Units cannot move diagonally.
+        </p>
+
+        <h5>Squad Movement</h5>
+        <p>
+          To move a squad, you roll a single movement die for the entire squad. The total
+          will then be applied to every member of the squad.<br/>
+          Move every squad member in turn, always maintaining base contact between
+          all units in the squad
+        </p>
+
+        <h5>Base Contact</h5>
+        <p>
+          If two units are in adjacent squares (including diagonally), they have base
+          contact.<br/>
+          The units of a squad must always remain in base contact with each other. Each
+          member must be in contact with at least one other squad member, so that the
+          entire squad is linked. If a unit in the middle of the squad is eliminated so that
+          the squad is no longer linked, the squad must move back into base contact
+          before they can take any other movement actions.
+        </p>
+
+        <%= image_tag "movement-diagram.png",
+          alt: "A grid diagram with units at positions A, B, C, D and E",
+          height: 175
+        %>
+
+        <p>
+          In this diagram, units A, B, C, and
+          D are all in base contact. Unit E
+          is not, and will not be able to take
+          further movements until the others
+          regain contact with it.
+          If a member of the squad is in base
+          contact with a leader, the leader
+          will affect the entire group.
+        </p>
+
+        <h5>Melee Attacks</h5>
+        <p>
+          For a melee attack, the attacking unit must be in base contact with the
+          defending enemy unit.<br/>
+          The attacking player announces their intention to attack, and rolls the attacking
+          unit’s Attack die. Their opponent rolls the defending unit’s Defence die. If the
+          attack total is higher than the defence total, the number difference is subtracted
+          from the defending unit’s Health total
+        </p>
+        <p>
+          <em>Example:</em>
+          Sarah uses her Badger Guard to attack Luke’s Fox Archer. She
+          rolls a D6 Attack die, and Luke rolls a D4 Defence die. Sarah
+          rolls a 5; Luke rolls a 3. There is a two point difference, so the
+          Fox Archer loses 2 Health points.
+        </p>
+
+        <h5>Ranged Attacks</h5>
+        <p>
+          Some Follower units can make ranged attacks. To make a ranged attack, you
+          must first roll to determine whether the target is within range, and then roll for
+          attack/defence as if it’s a melee attack (described above).<br/>
+          Ranged attack stats are given for each unit. Roll, and add the relevant numbers
+          to determine the unit’s range. (For instance, a Badger Marksman has a range
+          of 4+D4. Roll a D4, and add 4. The total will be the unit’s current attack range;
+          enemy targets must be within that number of tiles to be attacked.)<br/>
+          Ranged attacks can only be made when you have line of sight; you can’t shoot
+          around corners!<br/>
+          You can shoot through one of your own units but only if it is direct contact
+          with the unit that is firing.
+        </p>
+
+        <h5>Calculating Diagonal Range</h5>
+        <p>
+          If a target is in a straight line of tiles, horizontally or vertically, from the
+          attacker, range is simple to determine. If they are on a diagonal path, it is
+          slightly more complicated.<br/>
+          Count the number of tiles from attacker to target in the horizontal direction,
+          and the number of squares in the vertical direction. The range is equal to the
+          larger number plus half the smaller number (rounded up).
+        </p>
+        <p>
+          Here is a diagram to help explain:<br/>
+          <%= image_tag "diagonal-diagram.png",
+            alt: "A grid diagram with units at positions A, B, C, D and E",
+            height: 175
+          %><br/>
+          The green Leaf Coven unit is wanting to make a ranged attack
+          on one of the five Steam Guild units.<br/>
+          Unit A is 5 squares away. He needs a range for 5 for a
+          successful attack.<br/>
+          Unit B is on a diagonal path: 3 squares in one direction, and
+          5 squares in the other. The range needed is 5 plus half of 3
+          (rounded up, this is 2). So, he needs a range of 7.<br/>
+          Unit C is inside a building. He has no line of sight to this unit,
+          and cannot attack.<br/>
+          Unit D is around a corner. He has no line of sight to this unit,
+          and cannot attack.<br/>
+          Unit E is on a diagonal path: 8 squares in one direction, and 4
+          squares in the other. The range needed is 8 plus half of 4. So, he
+          needs a range of 10.
+        </p>
+
+        <h5>Line of sight</h5>
+        <p>
+          If two units are within the same building, and you could draw a straight line
+          from one unit to the other without it passing through any walls, the two units
+          have line of sight.<br/>
+          If two units are both outdoors, and you could draw a straight line from one
+          unit to the other without it passing through any walls, the two units have line
+          of sight.<br/>
+          The only tiles that have line of sight from inside a building to outside (or
+          outside to inside) are those directly next to a doorway. So, if a unit is standing
+          outside right next to a doorway, they can have line of sight anywhere into the
+          building (except for around corners) and anyone standing inside the building
+          can see them. Likewise, if a unit is inside right next to a doorway, they have line
+          of sight of any units outside (except for around corners), and anyone standing
+          outside can see them.<br/>
+          Obstacle tiles and objective tiles do not affect line of sight.
+        </p>
+
+        <h5>Health</h5>
+        <p>
+          Every time a unit is successfully attacked, their Health rating is lowered.
+          When a unit’s Health drops to 0, they are considered to be defeated, when this
+          happens replace that model with an <strong>X</strong> token; they can now be eliminated or
+          interrogated for information.<br/>
+          If a defeated target is attacked, they will be eliminated and the <strong>X</strong> token is then
+          removed from the game board. If the defeated target is interrogated the <strong>X</strong>
+          token is removed in the same way
+        </p>
+
+        <h5>Hidden Units</h5>
+        <p>
+          Initially, all your faction’s units will be <strong>HIDDEN</strong> Your opponent will be able to
+          see that you have a unit or squad there, but not what it is.
+          When creating your roster for the mission, assign a number to each unit and
+          squad. When setting up the units place down a numbered token or tokens for
+          squads based on that units number designation.
+          To find out what your opponent’s units are, you must move one of your units
+          into line of sight with one of theirs. Once <strong>LINE OF SIGHT</strong> is achieved, the unit
+          will be revealed, and will stay revealed for the rest of the game.
+        </p>
+      </div>
 
       <h3 id="missions" class="rules-page__category missions">
         Missions
