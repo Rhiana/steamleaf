@@ -56,7 +56,6 @@
   }
 
   p {
-    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 
@@ -67,7 +66,6 @@
     padding-left: 0;
     margin-bottom: 2rem;
     li {
-      font-size: 1.25rem;
       margin-right: 1rem
     }
     i {
@@ -83,10 +81,6 @@
     h5 {
       font-size: 1.5rem;
     }
-    p,
-    ul li {
-      font-size: 1.125rem;
-    }
     .rules-page__details {
       margin-left: 2.5rem;
     }
@@ -98,7 +92,6 @@
     li {
       display: flex;
       align-items: center;
-      font-size: 1.125rem;
       margin-bottom: .75rem;
       img {
         margin-right: .75rem;
@@ -153,5 +146,35 @@
   }
   &.missions {
     background-color: $copper-red;
+  }
+}
+a.rules-page__category {
+  &.general {
+    &:hover,
+    &:focus {
+      background-color: $smog-grey;
+      border-color: $leaf-green;
+    }
+  }
+  &.faction {
+    &:hover,
+    &:focus {
+      background-color: $smog-grey;
+      border-color: $steam-blue;
+    }
+  }
+  &.game {
+    &:hover,
+    &:focus {
+      background-color: $smog-grey;
+      border-color: $copper-orange;
+    }
+  }
+  &.missions {
+    &:hover,
+    &:focus {
+      background-color: $smog-grey;
+      border-color: $copper-red;
+    }
   }
 }

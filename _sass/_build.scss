@@ -70,7 +70,7 @@
     top: 100px;
   }
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -82,9 +82,13 @@
       gap: 1rem;
     }
     p {
-      font-size: 1rem;
       text-align: center;
       margin: 1rem 0;
+    }
+
+    > div {
+      display: flex;
+      flex-direction: column;
     }
   }
   h3 {
@@ -92,22 +96,27 @@
     background-color: $smog-grey;
     padding: 0.25rem .5rem;
     border-radius: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
 .build-page__card-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   background-color: $smog-grey;
   padding: 0.25rem;
   border-radius: .25rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0;
 
   p {
+    height: 4rem;
     margin-top: 0 !important;
     text-align: centre;
   }
 
   ul {
+    flex-grow: 1;
     list-style: none;
     padding-left: .25rem;
   }
