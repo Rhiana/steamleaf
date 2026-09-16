@@ -3,21 +3,24 @@ $(document).on('click','.setRating',function(e){
 
   const currentPoints = $(".current-points")
   const totalPoints = $(".total-points")
-  const rosterTable = $(".roster-table tbody")
+  const rosterTableTally = $(".roster-table tbody .amounts")
 
   currentPoints.text(challengeRating)
   totalPoints.text(challengeRating)
-  rosterTable.replaceWith('<tbody></tbody>')
+  rosterTableTally.text('0')
 });
 
 
 $(document).on('click','.addUnit',function(e){
   const unitName = $(this).data('unit-name')
   const unitPoints = $(this).data('unit-points')
-  const rosterTable = $(".roster-table tbody")
+
+  const currentUnitTally = $(`.roster-table tbody tr[data-unit-tally='${unitName}'] .amounts`)
   const currentPoints = $(".current-points")
-  const pointsRemaining = currentPoints.text() - unitPoints
+
+  const pointsRemaining = Number(currentPoints.text()) - Number(unitPoints)
+  const newUnitTally = Number(currentUnitTally.text()) + 1
 
   currentPoints.text(pointsRemaining)
-  rosterTable.append(`<tr><td class='units'>${unitName}</td><td class='amounts'>${unitPoints}</td></tr>`)
+  currentUnitTally.text(newUnitTally)
 });
