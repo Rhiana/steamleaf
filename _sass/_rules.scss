@@ -50,8 +50,13 @@
     font-size: 3rem;
   }
 
-  h3, h4, p {
+  h3, h4 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 
@@ -62,7 +67,7 @@
     padding-left: 0;
     margin-bottom: 2rem;
     li {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       margin-right: 1rem
     }
     i {
@@ -130,7 +135,7 @@
   width: 100%;
   padding: .5rem 1rem;
   border-radius: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   color: $inky-black;
   text-align: left;
