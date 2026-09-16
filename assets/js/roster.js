@@ -1,3 +1,16 @@
+$(document).on('click','.setRating',function(e){
+  const challengeRating = $(this).data('total-points')
+
+  const currentPoints = $(".current-points")
+  const totalPoints = $(".total-points")
+  const rosterTable = $(".roster-table tbody")
+
+  currentPoints.text(challengeRating)
+  totalPoints.text(challengeRating)
+  rosterTable.replaceWith('<tbody></tbody>')
+});
+
+
 $(document).on('click','.addUnit',function(e){
   const unitName = $(this).data('unit-name')
   const unitPoints = $(this).data('unit-points')

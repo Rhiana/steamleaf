@@ -17,6 +17,18 @@
   }
 }
 
+.build-page__rating-btns {
+  display: flex;
+  margin-bottom: 1rem;
+
+  .button {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .build-page__box {
   background-color: #E0BEB4;
   border-radius: 8px;
