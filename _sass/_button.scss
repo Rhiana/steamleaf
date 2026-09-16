@@ -1,3 +1,5 @@
+@use './theme' as *;
+
 .button {
   display: inline-block;
   text-align: center;
@@ -12,11 +14,11 @@
 }
 
 .button--dark {
-  background-color: #0E1519;
-  color: #ffffff;
+  background-color: $inky-black;
+  color: $smog-grey;
   &:hover,
   &:focus {
-    color: #0E1519;
-    background-color: #ffffff;
+    color: $inky-black;
+    background-color: $smog-grey;
   }
 }

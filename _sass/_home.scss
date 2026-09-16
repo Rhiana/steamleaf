@@ -1,3 +1,5 @@
+@use './theme' as *;
+
 .intro {
   display: flex;
   align-items: center;
@@ -8,7 +10,7 @@
     padding: 4rem;
   }
   p {
-    color: #FFFFFF;
+    color: $smog-grey;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -19,7 +21,7 @@
 }
 
 .intro__story {
-  background-color: #394247;
+  background-color: $inky-black;
   background-image: url("/assets/images/neutral-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,11 +29,11 @@
 }
 
 .intro__steam {
-  background-color: #271915;
+  background-color: $copper-brown;
   background-image: url("/assets/images/city-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-blend-mode: color-dodge;
+  background-blend-mode: overlay;
   @media (min-width: 768px) {
     align-items: flex-start;
   }
@@ -43,7 +45,7 @@
 }
 
 .intro__leaf {
-  background-color: #1B2313;
+  background-color: $dark-forest;
   background-image: url("/assets/images/forest-bg.png");
   background-repeat: no-repeat;
   background-size: cover;

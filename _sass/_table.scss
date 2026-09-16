@@ -1,11 +1,13 @@
+@use './theme' as *;
+
 table {
   width: 100%;
-  background-color: #D9D9D9;
+  background-color: $smog-grey;
 
   thead tr th,
   tbody tr td {
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
+    border-bottom: 2px solid $inky-black;
+    border-right: 2px solid $inky-black;
     padding: 5px;
     
 

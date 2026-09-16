@@ -1,8 +1,10 @@
+@use './theme' as *;
+
 .top-nav {
   position: sticky;
   top: 0;
-  background: #271915;
-  border-bottom: 1px solid #E0BEB4;
+  background: $copper-brown;
+  border-bottom: 1px solid $theme-light;
   z-index: 10;
   nav {
     display: flex;
@@ -16,18 +18,18 @@
     text-decoration: none;
     &.steam:hover,
     &.steam:focus {
-      background-color: #9DB3C0;
-      color: #0E1519;
+      background-color: $steam-blue;
+      color: $inky-black;
     }
     &.leaf:hover,
     &.leaf:focus {
-      background-color: #B6C9A3;
-      color: #0E1519;
+      background-color: $leaf-green;
+      color: $inky-black;
     }
     &.rules:hover,
     &.rules:focus {
-      background-color: #CDA34F;
-      color: #0E1519;
+      background-color: $copper-orange;
+      color: $inky-black;
     }
   }
 }

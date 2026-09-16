@@ -1,11 +1,13 @@
+@use './theme' as *;
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   position: relative;
-  background: #1E1E1E;
-  color: #E0BEB4;
+  background: $theme-dark;
+  color: $theme-light;
 }
 
 .content-container {

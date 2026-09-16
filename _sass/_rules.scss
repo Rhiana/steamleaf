@@ -1,3 +1,5 @@
+@use './theme' as *;
+
 .rules-page {
   position: relative;
   display: grid;
@@ -18,10 +20,10 @@
 }
 
 .rules-page__box {
-  background-color: #E0BEB4;
+  background-color: $theme-light;
   border-radius: 8px;
   padding: 2rem;
-  color: #0E1519;
+  color: $inky-black;
   margin-bottom: 1rem;
 }
 
@@ -130,21 +132,21 @@
   border-radius: .5rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #0E1519;
+  color: $inky-black;
   text-align: left;
   text-decoration: none;
-  border: 1px solid #0E1519;
+  border: 1px solid $inky-black;
 
   &.general {
-    background-color: #B6C9A3;
+    background-color: $leaf-green;
   }
   &.faction {
-    background-color: #9DB3C0;
+    background-color: $steam-blue;
   }
   &.game {
-    background-color: #CDA34F;
+    background-color: $copper-orange;
   }
   &.missions {
-    background-color: #D36047;
+    background-color: $copper-red;
   }
 }
