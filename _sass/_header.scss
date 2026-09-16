@@ -12,5 +12,22 @@
   .top-nav__links a {
     font-size: 1.25rem;
     margin: 0 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    &.steam:hover,
+    &.steam:focus {
+      background-color: #9DB3C0;
+      color: #0E1519;
+    }
+    &.leaf:hover,
+    &.leaf:focus {
+      background-color: #B6C9A3;
+      color: #0E1519;
+    }
+    &.rules:hover,
+    &.rules:focus {
+      background-color: #CDA34F;
+      color: #0E1519;
+    }
   }
 }
